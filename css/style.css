@@ -1,0 +1,838 @@
+/*
+
+|-----------------Development Info------------------------|
+|=========================================================|
+||--  Name : Shoeb Akhtar                              --||
+||--  Date : 28 march 2023                             --||
+||--  firm : Ket                                       --||
+||--  for  : Cmpany Name                               --||
+||--  URL  : www.companyurl.com                        --||
+|=========================================================|
+|---------------------------------------------------------|
+
+	 font-family: 'Montserrat';
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/*font-family: 'Nunito', sans-serif;*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Regular.eot');
+    src: url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Montserrat-Regular.woff2') format('woff2'),
+        url('../font/Montserrat-Regular.woff') format('woff'),
+        url('../font/Montserrat-Regular.ttf') format('truetype'),
+        url('../font/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-SemiBold.eot');
+    src: url('../font/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../font/Montserrat-SemiBold.woff') format('woff'),
+        url('../font/Montserrat-SemiBold.ttf') format('truetype'),
+        url('../font/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.eot');
+    src: url('../fonts/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Bold.woff2') format('woff2'),
+        url('../fonts/Oswald-Bold.woff') format('woff'),
+        url('../fonts/Oswald-Bold.ttf') format('truetype'),
+        url('../fonts/Oswald-Bold.svg#Oswald-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.eot');
+    src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald-Regular.ttf') format('truetype'),
+        url('../fonts/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* { -webkit-box-sizing : border-box; 
+	-moz-box-sizing : border-box;
+	 box-sizing : border-box;
+}
+*:before, *:after {
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	box-sizing : border-box;
+}
+::selection { 
+	color: #fff;
+	background : #303030;
+}
+html { 
+	-webkit-text-size-adjust : 100%;
+	-ms-text-size-adjust : 100%;
+	 scroll-behavior : smooth;
+}
+
+body { 
+	margin: 0;
+	font-family: 'Montserrat';
+	font-family: 'Oswald';
+}
+article, footer, header, nav, section, div { 
+	display : block;
+} 
+audio, canvas, video { 
+	  display : inline-block;
+	  vertical-align : baseline; 
+}
+a {
+	background-color : transparent;
+	text-decoration : none;
+	transition : all 0.4s;
+}
+strong {
+	font-weight: bold;
+}
+img {
+	border: 0;
+	width: 100%;
+} 
+button, input, select, textarea {
+	margin: 0;
+	font: inherit;
+	color: inherit;
+}
+button {
+	margin: 0;
+	padding: 0;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+button[disable], html input[disable] {
+	cursor: default;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat';
+	margin: 0;
+	line-height: normal;
+}
+p {
+	margin: 0 0 10px;
+}
+ul {
+    padding-left: 0;
+    margin: 0;
+    margin-top: 28px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.row {
+	/*in container padding was 15px from right and left thats why we use margin left and right -15px in row*/
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.row:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-md-"] {
+  float: left;
+  padding: 0 15px;
+}
+
+.pt1 {
+    padding-top: 10px;
+}
+.pt2 {
+    padding-top: 20px;
+}
+.pt3 {
+    padding-top: 30px;
+}
+.pt4 {
+    padding-top: 40px;
+}
+.pt5 {
+    padding-top: 50px;
+}
+.pt6 {
+    padding-top: 60px;
+}
+.pt7 {
+    padding-top: 70px;
+}
+.pt8 {
+    padding-top: 80px;
+}
+.pt9 {
+    padding-top: 90px;
+}
+.pt10 {
+    padding-top: 100px;
+}
+.pt11 {
+    padding-top: 110px;
+}
+.pt12 {
+    padding-top: 120px;
+}
+
+.pb1 {
+    padding-bottom: 10px;
+}
+.pb2 {
+    padding-bottom: 20px;
+}
+.pb3 {
+    padding-bottom: 30px;
+}
+.pb4 {
+    padding-bottom: 40px;
+}
+.pb5 {
+    padding-bottom: 50px;
+}
+.pb6 {
+    padding-bottom: 60px;
+}
+.pb7 {
+    padding-bottom: 70px;
+}
+.pb8 {
+    padding-bottom: 80px;
+}
+.pb9 {
+    padding-bottom: 90px;
+}
+.pb10 {
+    padding-bottom: 100px;
+}
+.pb11 {
+    padding-bottom: 110px;
+}
+.pb12 {
+    padding-bottom: 120px;
+}
+.col-md-1  { width : 8.33%;  }
+.col-md-2  { width: 16.66%;  }
+.col-md-3  { width : 25%;    }
+.col-md-4  { width : 33.33%; }
+.col-md-5  { width : 41.66%; }
+.col-md-6  { width : 50%;    }
+.col-md-7  { width : 58.33%; }
+.col-md-8  { width : 66.66%; }
+.col-md-9  { width : 75%;    }
+.col-md-10 { width : 83.33%; }
+.col-md-11 { width : 91.66%; }
+.col-md-12 { width : 100%;   }
+
+.footer-padding h3 {
+    color: #fff;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.footer-padding ul > li > a {
+    line-height: 27px;
+    color: #ffffffbf;
+    font-weight: 100;
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+*:focus {
+    outline: none;
+}
+.tb-bg {
+	background-color: #303030;
+}
+.top-bar {
+	background-color: #303030;
+	padding: 10px 0;
+}
+.logo img {
+    width: 100%;
+    max-width: 120px;
+}
+.search-icon i {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 37px;
+    cursor: pointer;
+}
+#search-input {
+  display: none;
+}
+
+#search-input.show {
+  display: inline-block;
+}
+
+.menu-icon {
+    font-size: 50px;
+    display: none;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    text-align: right;
+    padding-right: 10px;
+}
+.togle-logo { display: none;
+}
+.active {
+    background-color: #e9631c;
+}
+.main-navigation {
+    text-align: center;
+}
+.main-navigation > ul {
+	list-style: none;
+}
+.main-navigation > ul > li {
+	display: inline-block;
+}
+.main-navigation > ul > li > a {
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+
+.home-slider-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.hs-content {
+    padding-bottom: 80px;
+}
+.hs-content h1 {
+    padding-top: 250px;
+    font-family: 'Oswald';
+    font-weight: normal;
+    font-size: 95px;
+    color: #fff;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+.hs-content p {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 50px;
+    word-spacing: 0.5px;
+    letter-spacing: 1px;
+}
+.col-md-4.hs-content a {
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: normal;
+    color: #fff;
+    padding: 5px 20px;
+    background-color: #e8631c;
+    font-size: 23px;
+}
+#homeBannerslider {
+	position: relative;
+}
+#homeBannerslider .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#homeBannerslider .owl-dots .owl-dot span {
+    width: 50px;
+    height: 10px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+#homeBannerslider .owl-dots button.owl-dot.active span {
+	background-color: #e8631c;
+}
+
+/*End Header Section*/
+
+/*Dancer Tour Section*/
+.dancer-tour {
+	background-image: url('../images/orange-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.dt-content h1 {
+    text-align: center;
+    font-family: oswald;
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.dt-content p {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 60px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.america-outer {
+    padding: 30px;
+}
+.america-inner {
+    background-color: #303030;
+}
+.america-inner:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.america-inner h1 {
+	text-align: center;
+    font-family: oswald;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.america-inner p {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 19px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+/*End Dancer Tour Section*/
+
+/*Pricing Section*/
+
+.Pricing {
+	background-image: url('../images/black-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pricing-bg {
+    background-color: #e8631c;
+    border-radius: 10px;
+  
+}
+.pricing-bg img {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    display: block;
+ 	margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.pricing-bg p {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    padding-bottom: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.pricing-bg a {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    font-family: oswald;
+    background-color: #303030;
+    border-radius: 5px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.pricing-bg a:hover {
+    background-color: #fff;
+    color: #303030;
+}
+
+/* End Pricing Section*/
+
+/* Amazing Dance Section*/
+
+.amazing-dance {
+	background-color: #e9631c;
+	position: relative;
+}
+.amazing-dance .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.ad-content {
+	position: absolute;
+    top: 0;
+    right: 0;
+}
+.ad-img {
+	position: relative;
+}
+.amazing-dance .ad-img {
+    padding: 0;
+}
+.ad-img img {
+    width: 100%;
+    vertical-align: middle;
+}
+.ad-content {
+    position: absolute;
+    top: 50%;
+}
+
+.ad-content h1 {
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+    text-align: left;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.ad-content p {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    max-width: 80%;
+}
+
+
+.ad-content a {
+    font-family: 'Oswald';
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 40px;
+    background-color: #303030;
+    border-radius: 5px;
+    display: inline-block;
+}
+.ad-content a:hover {
+    background-color: #fff;
+    color: #303030;
+}
+/* Amazing Dance Section*/
+
+
+
+/* Best Dance Section*/
+
+.best-dance {
+	background-color: #e9631c;
+}
+.bd-img {
+    padding: 0;
+}
+.best-dance .row {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+.bd-img img {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.bd-img img {
+    width: 100%;
+    vertical-align: middle;
+}
+.bd-content {
+    padding-left: 60px;
+}
+.bd-content h1 {
+    padding-top: 50%;
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+    text-align: left;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.bd-content p {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.bd-content a {
+    font-family: 'Oswald';
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 40px;
+    background-color: #303030;
+    border-radius: 5px;
+    display: inline-block;
+}
+/* End Best Dance Section*/
+
+/* Statistics Section*/
+.statistics {
+	background-color: #303030;
+}
+
+.statistics .state h1 {
+    padding-top: 150px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+}
+.statistics p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+ }
+
+ .col-md-4.inner-statistics h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-weight: bold;
+    text-align: center;
+}
+.col-md-4.inner-statistics p {
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+section.statistics p {
+    padding-bottom: 80px;
+}
+
+/* Statistics Section*/
+
+
+
+/* simon Section*/
+
+.simon {
+	background-image: url(../images/overlay-dance.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.simon .content p {
+    color: #fff;
+    padding-top: 400px;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    padding-right: 260px;
+    padding-left: 260px;
+}
+.simon .content h1 {
+	color: #fff;
+    padding-bottom: 200px;
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Oswald';
+}
+/* End simon Section*/
+
+
+/* Subscribe Section*/
+
+.subscribe {
+	background-image: url(../images/subscribt-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.subscribe h1 {
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.subscribe p {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.subscribe-form {
+	text-align: center;
+	padding-bottom: 100px;
+}
+.subscribe-form input[type="email"] {
+    border: 0;
+    outline: none;
+    height: 45px;
+    width: 300px;
+}
+.subscribe-form input[type="submit"] {
+    padding: 10.5px 20px;
+    border: 0;
+    margin-left: -5px;
+    font-family: Oswald;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #303030;
+    color: #fff;
+    text-transform: uppercase;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: #ccc;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ccc;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+
+::placeholder {
+  color: #ccc;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+input:focus {
+	color: orange;
+	background-color: #303030;
+	letter-spacing: 3px;
+}
+/* End Subscribe Section*/
+
+/* Footer Section*/
+
+footer {
+	background-color: #303030;
+}
+footer i { margin-bottom: 20px;  }
+.footer-padding {
+	padding: 50px 0;
+}
+.footer-padding ul {
+	list-style: none;
+}
+.footer-padding p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffffbf;
+    font-weight: normal;
+    letter-spacing: 0px;
+    font-size: 18px;
+    padding-right: 190px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.footer-padding i {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px;
+ }
+ i.fa.fa-facebook {
+    padding: 10px 14px;
+}
+ i.fa.fa-facebook:hover {
+    color: #1877f2;
+}
+ i.fa.fa-instagram {
+    padding: 10px 12px;
+}
+ i.fa.fa-instagram:hover {
+    
+    color: #c32aa3;
+}
+ i.fa.fa-twitter {
+    padding: 10px 11px;
+}
+ i.fa.fa-twitter:hover {
+    color: #1da1f2;
+}
+ i.fa.fa-whatsapp {
+    padding: 10px 12px;
+}
+ i.fa.fa-whatsapp:hover {
+    color: #25d366;
+}
+
+/* End Footer Section*/

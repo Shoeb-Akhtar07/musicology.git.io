@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1280px) {
+	.main-navigation button { display: none; }
+}
+
+@media only screen and (max-width: 1110px) {/*min-767*/
+
+	.main-navigation > ul > li > a { font-size: 15px; }
+
+	.america-inner p { font-size: 16px; }
+
+ 	.hs-content h1 { padding-top: 100px; font-size: 55px; }
+ 	.hs-content p { font-size: 18px; margin-bottom: 0px; }
+
+ 	.dt-content p { font-size: 20px; max-width: 60%; }
+ 	.america-outer { padding: 30px; }
+ 	.pricing-bg p { font-size: 15px; }
+ 	.pricing-bg a { font-size: 24px; }
+ 	
+ 
+}
+
+
+
+@media only screen and (max-width: 767px) {/*min-468*/
+
+	.col-sm-1  { width : 8.33%;  }
+	.col-sm-2  { width: 16.66%;  }
+	.col-sm-3  { width : 25%;    }
+	.col-sm-4  { width : 33.33%; }
+	.col-sm-5  { width : 41.66%; }
+	.col-sm-6  { width : 50%;    }
+	.col-sm-7  { width : 58.33%; }
+	.col-sm-8  { width : 66.66%; }
+	.col-sm-9  { width : 75%;    }
+	.col-sm-10 { width : 83.33%; }
+	.col-sm-11 { width : 91.66%; }
+	.col-sm-12 { width : 100%;   }
+
+
+	.america-inner h1 { font-size: 22px; }
+	.america-inner p { font-size: 13px; padding-bottom: 14px; }
+
+	.dt-content h1 { font-size: 40px; margin-top: 20px; }
+	.dt-content p { font-size: 18px; margin: 0; max-width: 100%; }
+
+	.pricing-bg img { width: 50%; }
+
+	.ad-content h1 { font-size: 40px;}
+	.ad-content p { font-size: 18px; }
+	.ad-content a { font-size: 16px; padding: 6px 25px; }
+
+	.bd-content h1 { font-size: 40px; }
+	.bd-content p { font-size: 18px; }
+	.bd-content a { font-size: 16px; padding: 6px 25px;  }
+
+	.statistics .state h1 { font-size: 40px; padding-top: 60px; padding-bottom: 15px; }
+	.statistics .state p { margin-bottom: 20px; padding-bottom: 0; font-size: 18px; }
+
+	.col-md-4.inner-statistics h1 { font-size: 40px; }
+	.col-md-4.inner-statistics p { font-size: 18px; padding-bottom: 40px; }
+
+	.simon .content p { padding-top: 150px; font-size: 19px; margin-bottom: 0; padding: 0; margin-top: 50px; }
+	.simon .content h1 { font-size: 40px; padding-bottom: 20px; }
+
+	.subscribe h1 { font-size: 40px; padding-top: 50px; }
+	.subscribe p { font-size: 18px; }
+	.subscribe-form input[type="email"] { width: 100%; margin-bottom: 10px; }
+	.subscribe-form input[type="submit"] { width: 100%; margin-left: 0; margin-bottom: 10px;}
+
+
+
+	.footer-padding h3 { font-size: 20px; }
+	.footer-padding p { font-size: 18px; padding-right: 0; }
+	.footer-padding ul > li > a { font-size: 18px; }
+
+	.menu-icon { display: block; }
+	.main-navigation { padding: 0; transition: all 0.5s ease; position: absolute; width: 200px; height: 100vh; top: 0; left: -300px; text-align: left; background-color: rgba(0,0,0,0.9); z-index: 99; }
+	.main-nav-left { left: 0; }
+	.main-navigation ul > li { display: block; }
+	.main-navigation > ul > li > a { padding-left: 20px; display: block; margin-left: 0; }
+	.search-icon { display: none; }
+	.togle-logo { display: block; width: 150px; padding-top: 10px; margin-bottom: 20px; margin-left: 20px;}
+
+
+}
+
+
+
+@media only screen and (max-width: 480px) {/*min-360*/
+
+	.col-xs-1  { width : 8.33%;  }
+	.col-xs-2  { width: 16.66%;  }
+	.col-xs-3  { width : 25%;    }
+	.col-xs-4  { width : 33.33%; }
+	.col-xs-5  { width : 41.66%; }
+	.col-xs-6  { width : 50%;    }
+	.col-xs-7  { width : 58.33%; }
+	.col-xs-8  { width : 66.66%; }
+	.col-xs-9  { width : 75%;    }
+	.col-xs-10 { width : 83.33%; }
+	.col-xs-11 { width : 91.66%; }
+	.col-xs-12 { width : 100%;   }
+
+ 	.hs-content h1 { font-size: 30px; }
+ 	.hs-content p { font-size: 15px; }
+ 	.col-md-4.hs-content a { font-size: 15px; padding: 5px 15px; }
+ 	.menu-icon i { font-size: 35px; padding-top: 30px; }
+
+ 	.dt-content p {max-width: 100%; font-size: 18px; }
+
+ 	
+ 	.america-inner p { font-size: 20px; }
+ 	.america-inner h1 { font-size: 30px; }
+
+ 	.ad-content h1 { font-size: 35px; padding: 10px 0; text-align: center; }
+ 	.ad-content p { text-align: center; max-width: 100%; margin: 0 auto; }
+ 	.ad-content { text-align: center;  display: contents;}
+ 	.ad-content a { font-size: 20px; margin-bottom: 10px; display: table; margin: 0 auto; }
+
+ 	.bd-content h1 { text-align: center; padding: 10px 0; font-size: 35px; margin: 0 !important;}
+ 	.bd-content p { text-align: center; margin: 0 !important;}
+ 	.bd-content { text-align: center; padding: 0 10px;}
+ 	.bd-content a { font-size: 20px; margin-bottom: 10px; }
+
+ 	.col-md-6 .state { padding: 0; }
+ 	.statistics .state h1 { font-size: 35px; }
+
+ 	.subscribe-form input { margin-bottom: 10px; }
+
+ 	.footer i { margin-bottom: 20px; }
+ 	
+}
+
+
+@media only screen and (max-width: 359px) {/*min-319*/
+ 	
+}
+
+@media only screen and (max-width: 320px) {
+ 	
+}
+
+
+
